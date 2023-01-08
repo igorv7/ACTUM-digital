@@ -1,5 +1,6 @@
 import Page from './page';
-class LoginPage extends Page{
+class LoginPage extends Page {
+    
     // Element locators
     LOG_IN_TAB = '[id="login2"]';
     LOGIN_USERNAME_FIELD = '[id="loginusername"]';
