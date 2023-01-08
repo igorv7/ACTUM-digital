@@ -14,3 +14,8 @@ Feature: Sign Up
     When I enter sign up username value "blazesomebody@mail.com"
     When I enter sign up password value "Boss1234"
     Then I click on Sign up button and validate alert message "This user already exist."
+
+  Scenario: Test sign up with empty credentials
+    Given I visit demoblaze webpage
+    When I click on Sign Up tab
+    Then I click on Sign up button and validate alert message "Please fill out Username and Password."

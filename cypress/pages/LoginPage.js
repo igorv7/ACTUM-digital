@@ -27,7 +27,7 @@ class LoginPage extends Page{
     }
 
     getLoggedUser() {
-        cy.get(this.LOGGED_USER_LABEL);
+        cy.get(this.LOGGED_USER_LABEL).contains('Welcome blazeyourself@mail.com');
     }
 
 

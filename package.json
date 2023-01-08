@@ -16,7 +16,10 @@
   "bugs": {
     "url": "https://github.com/igorv7/ACTUM-digital/issues"
   },
-  "dependencies": {
-    "cypress": "^12.3.0"
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.0.0",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^12.3.0",
+    "esbuild": "^0.16.15"
   }
 }
