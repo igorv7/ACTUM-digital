@@ -27,6 +27,10 @@ When(/^I open Apple Monitor item$/, () => {
     categoriesPage.clickAppleMonitorItem();
 });
 
+When(/^I click on Add to Cart button$/, () => {
+    categoriesPage.clickAddToCartButton();
+});
+
 Then(/^I validate that item name is "(.*)"$/, (name) => {
     categoriesPage.getItemName(name);
 });

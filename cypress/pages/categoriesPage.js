@@ -33,6 +33,10 @@ class CategoriesPage extends Page {
         cy.get(this.CATEGORY_ITEM).contains('Apple monitor 24').click();
     }
 
+    clickAddToCartButton() {
+        cy.get(this.ADD_TO_CART_BUTTON).contains('Add to cart').click();
+    }
+
     getItemName(name) {
         cy.get(this.ITEM_NAME).contains(name);
     }
