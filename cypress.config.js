@@ -22,7 +22,9 @@ module.exports = defineConfig({
   e2e: {
     baseUrl: "https://www.demoblaze.com",
     specPattern: "**/*.feature",
-    defaultCommandTimeout: 20000,
+    defaultCommandTimeout: 8000,
+    pageLoadTimeout: 25000,
+    chromeWebSecurity: false,
     supportFile: false,
     setupNodeEvents,
     nonGlobalStepDefinitions: false,
