@@ -4,6 +4,7 @@ class ShoppingCartPage extends Page {
     // Element locators
     CART_ITEM = '[id="tbodyid"]';
     TOTAL_PRICE = '[id="totalp"]';
+    TOTAL_PRICE_FORM = '[id="totalm"]';
     CUSTOM_BUTTON = '[type="button"]';
     NAME_FIELD = '[id="name"]';
     COUNTRY_FIELD = '[id="country"]';
@@ -11,6 +12,7 @@ class ShoppingCartPage extends Page {
     CREDIT_CARD_FIELD = '[id="card"]';
     MONTH_FIELD = '[id="month"]';
     YEAR_FIELD = '[id="year"]';
+    DELETE_ITEM = '[class="success"]';
 
 
     // Functions
@@ -20,6 +22,10 @@ class ShoppingCartPage extends Page {
 
     getTotalCartPrice() {
         cy.get(this.TOTAL_PRICE).should('have.text', 800);
+    }
+
+    getTotalCartPriceForm() {
+        cy.get(this.TOTAL_PRICE_FORM).should('have.text', 'Total: 800');
     }
 
     enterName(name) {
@@ -54,6 +60,10 @@ class ShoppingCartPage extends Page {
 
     clickOnCustomButton(button) {
         cy.get(this.CUSTOM_BUTTON).contains(button).click();
+    }
+
+    clickDeleteItem() {
+        cy.get(this.DELETE_ITEM).contains('Delete').click();
     }
 
 }

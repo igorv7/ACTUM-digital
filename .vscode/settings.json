@@ -1,7 +1,3 @@
 {
-    "editor.formatOnSave": true,
-    "cucumberautocomplete.steps": [
-        "cypress/support/**/**.steps.js"
-    ],
-    "cucumberautocomplete.syncfeatures": "cypress/features/*.feature"
+    "editor.formatOnSave": true
 }

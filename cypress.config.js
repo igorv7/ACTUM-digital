@@ -20,8 +20,12 @@ async function setupNodeEvents(on, config) {
 
 module.exports = defineConfig({
   e2e: {
+    baseUrl: "https://www.demoblaze.com",
     specPattern: "**/*.feature",
+    defaultCommandTimeout: 20000,
     supportFile: false,
     setupNodeEvents,
-  },
+    nonGlobalStepDefinitions: false,
+    stepDefinitions: "cypress/support/step_definitions/*.js"
+  }
 });

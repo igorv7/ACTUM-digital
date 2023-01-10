@@ -38,3 +38,7 @@ Then(/^I validate the item in the cart has "(.*)"$/, (value) => {
 Then(/^I validate the total price in the Cart is 800$/, () => {
     shoppingCartPage.getTotalCartPrice();
 });
+
+Then(/^I validate the total price in the form is 800$/, () => {
+    shoppingCartPage.getTotalCartPriceForm();
+});
