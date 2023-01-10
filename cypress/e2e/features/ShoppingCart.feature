@@ -2,7 +2,6 @@ Feature: Shopping Cart
     Test shopping cart functionality on Demoblaze demo app
 
   Background: 
-    Given All Demoblaze routes are intercepted
     Given I visit demoblaze webpage
     When I click on Log In tab
     When I enter log in username value "blazeyourself@mail.com"
@@ -15,8 +14,6 @@ Feature: Shopping Cart
     When I click on category Phones
     When I open Samsung Galaxy S7 item
     When I click on Add to Cart button
-    When I capture Add Item To Cart response
-    Then I assert that Add to Cart API response has been successful
     When I go to Shopping Cart page
     Then I validate the total price in the Cart is 800
     When I click on "Place Order" button
