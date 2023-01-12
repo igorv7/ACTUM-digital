@@ -44,3 +44,6 @@ Then(/^I validate the total price in the Cart is 800$/, () => {
 Then(/^I validate the total price in the form is 800$/, () => {
     shoppingCartPage.getTotalCartPriceForm();
 });
+
+/* Also I wanted to implement function for removing the items from the shopping cart when I login because 
+if the test fails the item will be left in the shopping cart and I have specific validations for total price */

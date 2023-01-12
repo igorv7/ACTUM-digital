@@ -6,14 +6,14 @@ Feature: Sign Up
 
   Scenario: Test successful sign up
     When I click on Sign Up tab
-    When I enter sign up username value "blazesomebodyelseeee@mail.com"
-    When I enter sign up password value "Boss1234"
+    When I enter new sign up username
+    When I enter new sign up password
     Then I click on Sign up button and validate alert message "Sign up successful."
 
   Scenario: Test sign up with already existing account
     When I click on Sign Up tab
     When I enter sign up username value "blazesomebody@mail.com"
-    When I enter sign up password value "Boss1234"
+    When I enter sign up password value "Boss123"
     Then I click on Sign up button and validate alert message "This user already exist."
 
   Scenario: Test sign up with empty credentials

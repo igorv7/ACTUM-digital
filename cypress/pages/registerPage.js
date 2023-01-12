@@ -1,4 +1,5 @@
 import Page from './page';
+
 class RegisterPage extends Page {
     // Element locators
     SIGN_UP_TAB = '[id="signin2"]';
