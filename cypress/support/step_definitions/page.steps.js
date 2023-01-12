@@ -10,3 +10,5 @@ Given(/^I visit demoblaze webpage$/, () => {
 Given(/^I go to Shopping Cart page$/, () => {
     page.openShoppingCart();
 });
+
+// This is basically navigation page where Home, Contact, About us, Cart links are supposed to be used and openBrowser() should be moved to commands.js file

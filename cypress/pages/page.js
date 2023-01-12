@@ -1,5 +1,6 @@
 class Page {
 
+    // Functions
     openBrowser() {
         cy.visit(Cypress.config().baseUrl);
     }

@@ -30,3 +30,6 @@ Then(/^I click on Log in button and validate alert message "(.*)"$/, (message) =
     expect(m).to.equal(message);
     });
 });
+
+/* Unfortunately I didn't have time to debug this but validating alert message is not working how it supposed to work,
+ for some reason it is always asserting alert message in the last test scenario - probably Cypress 10+ quirks*/
